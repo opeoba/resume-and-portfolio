@@ -1,0 +1,288 @@
+* {
+	padding: 0px;
+	margin: 0 2px;
+	font-family: sans-serif;
+	/*border-sizing: border-box;*/
+}
+
+body {
+	 background-color: #ffffff;
+	 padding-top: 220px;
+}
+
+.header-and-nav {
+	position:fixed;
+    top: 0;
+    left: 0;
+	width: 100%;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1%;
+    padding-top: 1%;
+}
+
+header {
+    background-color: #f2f2f2;
+}
+
+header div {
+    text-align: center;
+}
+
+#name {
+    font-size: 30px;
+}
+
+#qual {
+    font-size: 13px;
+    font-style: italic;
+}
+
+#proftitle {
+    font-size: small;
+}
+
+nav {
+	/*width: 100%;*/
+	background: #2758a0;
+}
+
+ul {
+	/*width: 100%;*/
+	margin: 0 auto; /*top and bottom margins equal 0, left and right margins are equal/ set to the same size*/
+	padding: 0;
+	text-align: center;
+}
+
+ul li {
+	list-style: none; /*has the effect of taking out the bullet points from navbar items*/
+	display: none; /*hides the menu items*/
+	padding: 20px 50px;
+	
+}
+
+ul li:hover {
+	background: rgba(128, 128, 128, 0.8);
+	font-weight: bold;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: rgba(128, 128, 128, 0.8);
+	text-align: right;
+	box-sizing: border-box;
+	color: #ffffff;
+	font-size: 30px;
+}
+
+.active {
+	display: block;
+}
+
+#about-me {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	border-bottom: 1px solid #2758a0;
+	padding-bottom: 10px;
+}
+
+#profile-pic {
+	align-self: center;
+}
+
+#about-me-header {
+	background: rgba(128, 128, 128, 0.8);
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+#about-me-text {
+	line-height: 30px;
+}
+
+#experience {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	border-bottom: 1px solid #2758a0;
+	padding-bottom: 10px;
+}
+
+#experiences-competencies-education-header {
+	background:rgba(128, 128, 128, 0.8);
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+#work-experience-header, #competencies-header, #educ-experience-header, #courses-header {
+	background: #f2f2f2;
+	padding: 5px 0 10px 0;
+	margin-bottom: 10px;
+}
+
+.org-and-date {
+	padding: 10px 0 25px 0;
+}
+
+.school-and-date {
+	padding: 10px 0 25px 0;
+}
+
+#portfolio {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	border-bottom: 1px solid #2758a0;
+	padding-bottom: 10px;
+}
+
+#portfolio-header {
+	background: rgba(128, 128, 128, 0.8);
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.portfolio-item {
+	width: 75%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+#contact-me {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	border-bottom: 1px solid #2758a0;
+	padding-bottom: 10px;
+}
+
+#contactme-header {
+	background: rgba(128, 128, 128, 0.8);
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.input {
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	border: none;
+}
+
+#input {
+	height: 200px;
+}
+
+#submit {
+	background: rgba(128, 128, 128, 0.8);
+	width: 125px;
+	height: 50px;
+	color: #fff;
+	border: 2px #f2f2f2 solid;
+	cursor: pointer;
+}
+
+footer {
+	background: #f2f2f2;
+	font-size: 13px;
+	display: flex;
+	height: 300px;
+	flex-direction: column;
+}
+
+footer div span {
+	font-size: 11px;
+}
+
+.footer-element {
+	flex: 0 0 50px;
+	background: #f2f2f2;margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+	.toggle {
+		display: none;
+	}
+
+	ul li {
+		display: inline-block;
+		padding: 20px 40px;
+	}
+	#about-me {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#about-me-text {
+		margin: 0 0 0 30px;
+	}
+
+	#experience {
+		flex-direction: row;
+	}
+
+	#work-experience {
+		flex: 1;
+	}
+
+	#competencies-education-courses {
+		flex: 1;
+		margin: 0 0 0 30px;
+	}
+	
+	.portfolio-item {
+		width: 45%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
+
+	/*.input {
+		background-color: #f2f2f2;
+		width: 75%;
+		height: 50px;
+		border: none;
+	}*/
+
+	footer {
+		flex-direction:row;
+		height: 60px;
+	}
+
+	.footer-element {
+		flex: 1;
+}
+
+@media (min-width: 1100px) {
+	ul li {
+		padding: 20px 50px;
+	}
+
+	footer {
+		flex-direction: row;
+	}
+}
